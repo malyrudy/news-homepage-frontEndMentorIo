@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
         <li>Trending</li>
         <li>Categories</li>
       </ul>
-      <img src="./assets/images/icon-menu.svg" alt="menu-icon">
+      <img src="./assets/images/icon-menu.svg" alt="menu-icon" class="menu-icon">
       <ul class="mobile-nav">
         <li>Home</li>
         <li>New</li>
@@ -29,32 +30,37 @@
   </header>
   <main>
     <div class="wrapper">
-      <div class="bright-future">
-        <img src="./assets/images/image-web-3-desktop.jpg" alt="web3-desktop">
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div class="paragraph-and-btn">
-          <p>
-            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-            But is it really fulfilling its promise?
-          </p>
-          <button>Read more</button>
+      <div class="showcase">
+        <div class="bright-future">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="web3-desktop" class="web3-desktop">
+          <div>
+            <h1 class="main-heading">The Bright Future of Web 3.0?</h1>
+            <div class="paragraph-and-btn">
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="new">
+          <h2 class="new-heading">New</h2>
+          <div class="new-item">
+            <h4>Hydrogen VS Electric Cars</h4>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="new-item">
+            <h4>The Downsides of AI Artistry</h4>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="new-item">
+            <h4>Is VC Funding Drying Up?</h4>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
         </div>
       </div>
-      <div class="new">
-        <h2>new</h2>
-        <div class="new-item">
-          <h2>Hydrogen VS Electric Cars</h2>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
-        <div class="new-item">
-          <h2>The Downsides of AI Artistry</h2>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </div>
-        <div class="new-item">
-          <h2>Is VC Funding Drying Up?</h2>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </div>
-      </div>
+      
       <div class="magazines">
         <div class="magazine">
           <img src="./assets/images/image-retro-pcs.jpg" alt="retro-pc">
@@ -87,8 +93,9 @@
           </div>
         </div>
       </div>
-      
     </div>
   </main>
+  <div class="shadow"></div>
+  <script src="./script.js"></script>
 </body>
 </html>
